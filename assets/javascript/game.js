@@ -12,6 +12,19 @@ let underscoreBlanks = 0;
 let successfulGuesses = [];
 //hold wrong guesses
 let wrongGuesses = [];
+//holds link to images
+// let image = {
+//     'curry': 'assets/images/curry.jpg',
+//     'jordan': 'assets/images/jordan.jpg',
+//     'olajuwon': 'assets/images/olajuwon.jpg',
+//     'bird': 'assets/images/bird.jpg',
+//     'durant': 'assets/images/durant.jpg',
+//     'magic': 'assets/images/magic.jpg',
+//     'pippen': 'assets/images/pippen.jpg',
+//     'shaq': 'assets/images/shaq.jpg',
+//     'ampntetokounmpo': 'assets/images/ampntetokounmpo.jpg',
+//     'lebron': 'assets/images/lebron.jpg',
+// }
 
 //counters
 let wins = 0;
@@ -52,7 +65,8 @@ function winLose()
 		//Changes HTML
         document.getElementById('wins').innerHTML = wins;
         //changes picture
-        document.getElementById('player-pic').src='assets/images/curry.jpg';
+        document.getElementById('player-pic').src= 'assets/images/winner.gif';
+        
         //plays raphorn
         document.getElementById('rap-horn').play();
 		alert('You Win');
